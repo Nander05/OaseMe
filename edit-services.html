@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Edit Services</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+  </head>
+  <body class="bg-n20 pb-10">
+    <!-- Dashborad Header Area Start -->
+    <include-dashboard-header />
+    <!-- Dashborad Header Area End -->
+
+    <!-- Edit Services start -->
+    <section class="mt-[160px]">
+      <div
+        class="4xl:large-container grid grid-cols-12 gap-4 rounded-2xl bg-white p-4 max-4xl:mx-4 sm:gap-6 sm:p-10"
+      >
+        <div class="col-span-12 flex items-start justify-between gap-4">
+          <div class="">
+            <h4 class="heading-4 pb-6">Add/Edit Service</h4>
+            <p class="text-xl font-medium">Save Information</p>
+          </div>
+          <a href="./services.html" class="text-lg font-medium text-b300"
+            >View Service</a
+          >
+        </div>
+
+        <div class="col-span-12">
+          <p class="pb-3 font-medium text-n100">Add Category*</p>
+          <input
+            type="text"
+            placeholder="Category"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12">
+          <p class="pb-3 font-medium text-n100">Service Category*</p>
+          <input
+            type="text"
+            placeholder="Service Category"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12">
+          <p class="pb-3 font-medium text-n100">Add Service title*</p>
+          <input
+            type="text"
+            placeholder="Add Title"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+
+        <div class="col-span-12">
+          <p class="pb-3 font-medium text-n100">Add Service Description*</p>
+          <textarea
+            placeholder="Type Description"
+            class="min-h-40 w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          ></textarea>
+        </div>
+
+        <div class="col-span-12">
+          <p class="pb-3 font-medium text-n100">Upload Your Banner*</p>
+          <div class="flex w-full items-center justify-center">
+            <label
+              for="fileUpload"
+              class="flex w-full cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border border-b50 bg-n10 py-10 text-n300"
+            >
+              <i class="ph ph-image text-6xl"></i>
+              <span class="font-medium">
+                Drop Your Image or <span class="text-b300">Browse</span>
+              </span>
+            </label>
+            <input type="file" class="hidden" id="fileUpload" />
+          </div>
+        </div>
+        <div class="col-span-12">
+          <button
+            class="relative flex w-full items-center justify-center overflow-hidden rounded-xl bg-b300 px-4 py-3 font-semibold text-white duration-700 after:absolute after:inset-0 after:left-0 after:w-0 after:rounded-xl after:bg-yellow-400 after:duration-700 hover:text-n900 hover:after:w-[calc(100%+2px)] sm:px-8"
+          >
+            <span class="relative z-10">Save Changes</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Edit Services end -->
+
+    <!-- Scroll To top Button Start -->
+    <include-scroll-top-button />
+    <!-- Scroll To top Button End -->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="../index.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/plugins/plugins.js"></script>
+    <script src="../assets/js/plugins/plugin-custom.js"></script>
+  </body>
+</html>

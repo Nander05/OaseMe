@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/fav.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Profile</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+  </head>
+  <body class="bg-n20 pb-10">
+    <!-- Dashborad Header Area Start -->
+    <include-dashboard-header />
+    <!-- Dashborad Header Area End -->
+
+    <!-- Profile Info start -->
+    <section class="mt-[160px]">
+      <div
+        class="4xl:large-container grid grid-cols-12 gap-4 rounded-2xl bg-white p-4 max-4xl:mx-4 sm:gap-6 sm:p-10"
+      >
+        <div class="col-span-12 flex items-center justify-between gap-4">
+          <h4 class="heading-4">Profile Information</h4>
+          <a
+            href="./edit-profile.html"
+            class="flex items-center justify-start gap-3 text-lg font-medium text-b300"
+            ><i class="ph ph-pencil-simple-line text-2xl"></i>Edit Profile</a
+          >
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <p class="pb-3 font-medium text-n100">Name:</p>
+          <input
+            type="text"
+            placeholder="Jhon Dhoe"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <p class="pb-3 font-medium text-n100">Area:</p>
+          <input
+            type="text"
+            placeholder="New york"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <p class="pb-3 font-medium text-n100">Email:</p>
+          <input
+            type="text"
+            placeholder="example@mail.com"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <p class="pb-3 font-medium text-n100">Post Code:</p>
+          <input
+            type="text"
+            placeholder="1234"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <p class="pb-3 font-medium text-n100">Phone:</p>
+          <input
+            type="text"
+            placeholder="+1234567"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12 sm:col-span-6">
+          <p class="pb-3 font-medium text-n100">Address:</p>
+          <input
+            type="text"
+            placeholder="3517 W. Gray St. Utica, Pennsylvani"
+            class="w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          />
+        </div>
+        <div class="col-span-12">
+          <p class="pb-3 font-medium text-n100">About:</p>
+          <textarea
+            placeholder="We understand that every space is unique, which is why we tailor our cleaning services to meet the specific needs and preferences of each client. Our team of experienced and trained cleaners uses industry-leading techniques, equipment, and eco-friendly products to deliver superior results while minimizing environmental impact."
+            class="min-h-40 w-full rounded-xl border border-b50 bg-n10 p-3 outline-none placeholder:text-n800"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+    <!-- Profile Info end -->
+
+    <!-- Scroll To top Button Start -->
+    <include-scroll-top-button />
+    <!-- Scroll To top Button End -->
+
+    <!-- ==== js dependencies start ==== -->
+    <script src="../index.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/plugins/plugins.js"></script>
+    <script src="../assets/js/plugins/plugin-custom.js"></script>
+  </body>
+</html>
